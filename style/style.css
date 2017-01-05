@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+* {
+margin: 0;
+padding:0;
+border:0;
+}
+/*
+dark turquoise = #03afc6
+mid turquoise = #28c9de  #02c2d9
+turquoise = #87e1ee
+
+
+green = #45b29a
+dark blue = #2c3d51
+
+*/
+
+html,body, #root, #app, #homepage{
+  height:100%;
+}
+
+body{
+  font-family: 'Work Sans', sans-serif;
+}
+
+h1 > img {
+  width:5%;
+  position: relative;
+  top:10px;
+  margin-right: 10px;
+}
+
+/*start of about me section */
+#aboutMeContainer{
+  background:#45b29a;
+  color:white;
+  overflow: auto;
+  position: relative;
+}
+
+
+#introduction{
+  float:left;
+  margin: 30px 0 0 30%;
+}
+
+#introduction > span{
+  font-weight: bold;
+  font-size: 2em;
+}
+
+#pcIcon{
+  position: absolute;
+  top:20px;
+  left:10%;
+  width:10%;
+}
+
+#iconsAboutMeWrapper2{
+  overflow: auto;
+  clear: left;
+}
+
+#noteIcon{
+float:left;
+margin:20px 0 40px 25%;
+width:4vw;
+}
+
+#diskIcon{
+  float:right;
+  margin: 30px 40% 40px 0;
+  width:4vw;
+}
+
+#pencilIcon{
+  width:4vw;
+  margin: 20px 0 0 0;
+}
+
+#browserIcon{
+  width:4vw;
+  margin:10px 0 0 70%;
+  display: block;
+}
+
+/*end of about me section */
+
+/*start of portfolio section */
+
+#portfolioContainer{
+  background:#ecf0f1;
+  color:#455a64;
+  overflow: auto;
+  padding-bottom: 20px;
+}
+
+#portfolioContainer > h1{
+  margin:0 0 0 30%;
+ padding-top:20px;
+}
+
+#portfolioContainer > span{
+  font-weight: bold;
+  font-size: 2em;
+  margin-left:40%;
+  display: block;
+  clear:left;
+  padding-top: 10px;
+}
+
+.webProfileWrappers{
+  overflow: auto;
+  float:left;
+  width:60%;
+  margin-left:25%;
+}
+
+.webProfileWrappers > h3{
+float:left;
+margin: 15px 0 10px 30px;
+}
+
+.webProfileWrappers > a{
+  background:#45b29a;
+  padding:5px;
+  text-decoration: none;
+  margin:10px 10% 10px 10px;
+  color:white;
+  float:right;
+}
+
+.webProfileWrappers > div{
+  margin: 10px 0 0 0;
+  padding:10px;
+  float:right;
+  width:20%;
+  font-size: 1vw;
+}
+
+.webProfileImg{
+  float:left;
+  margin:10px 0 0 0;
+  width:70%;
+}
+
+/*end of portfolio section */
+
+/*start of photography section */
+
+#photographyContainer > h1{
+  margin:0 0 0 18%;
+ padding-top:20px;
+}
+#photographyContainer > span{
+  font-weight: bold;
+  font-size: 2em;
+  margin-left: 40%;
+}
+
+#photographyWrapper{
+  overflow: auto;
+  padding-left: 8%;
+
+}
+
+
+.photographyImg{
+  width:30%;
+  float:left;
+}
+
+/*end of photography section */
+
+/*start of contact section */
+
+#contactContainer{
+  background:#45b29a;
+  text-align: center;
+}
+
+#contactWrapper{
+  background: #50cfb3;
+  border:1px solid #b7b7b7;
+  display: inline-block;
+  margin:30px 0 30px 0;
+  width:30%;
+  border-radius:10px;
+  line-height: 50px;
+}
+
+/*end of contact section */
