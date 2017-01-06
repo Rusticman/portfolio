@@ -8,7 +8,7 @@ import axios from 'axios';
  class App extends Component {
 
 componentWillMount(){
-  const ROOT_URL = 'http://localhost:3000';//fires up server
+  const ROOT_URL = 'https://portfolio-server-rustic.herokuapp.com';//fires up server
   axios.post(`${ROOT_URL}/fire`)
   .then(response => console.log('contact'))
   .catch(err => console.error(err))
@@ -21,7 +21,6 @@ componentWillMount(){
       <div id="app">
         <Header />
           <Homepage />
-
       </div>
 
     );

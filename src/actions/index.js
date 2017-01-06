@@ -5,7 +5,7 @@ FORM_APPEARANCE,
 EMAIL_CONFIRMED_DIV
 } from './types';
 
-const ROOT_URL = 'http://localhost:3000'
+const ROOT_URL = 'https://portfolio-server-rustic.herokuapp.com';
 
 export function emailFormAppearance(boolean){
   if(boolean){

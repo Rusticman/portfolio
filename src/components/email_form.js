@@ -5,13 +5,16 @@ class EmailForm extends Component{
 
   handleEmailSubmit(value){
 const {emailConfirmationAppear,emailFormAppearance} = this.props;
-        this.props.sendEmail(value.email, value.username, value.message, emailConfirmationAppear);
 
-         emailFormAppearance(false)
+if(value.email.length > 0 && value.username.length > 0 && value.message.length > 0){
+  this.props.sendEmail(value.email, value.username, value.message);
 
-         value.email = '';
-         value.username = '';
-         value.message = '';
+  emailFormAppearance(false)
+
+  value.email = '';
+  value.username = '';
+  value.message = '';
+}
   }
 
   removeForm(e){

@@ -4,9 +4,11 @@
   "description": "portfolio website showcasing previous work.",
   "main": "main.js",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "postinstall": "webpack -p",
+    "start": "node server.js"
   },
   "author": "Rusticman",
   "license": "ISC",
@@ -22,8 +24,7 @@
     "jsdom": "^9.8.3",
     "mocha": "^3.1.2",
     "react-addons-test-utils": "^15.4.0",
-    "webpack-dev-server": "^1.14.0",
-    "webpack": "^1.12.9"
+    "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
     "axios": "^0.15.3",
@@ -36,6 +37,7 @@
     "react-redux": "^4.0.0",
     "redux": "^3.0.4",
     "redux-form": "^6.4.3",
-    "redux-thunk": "^2.1.0"
+    "redux-thunk": "^2.1.0",
+    "webpack": "^1.12.9"
   }
 }
