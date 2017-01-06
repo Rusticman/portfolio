@@ -5,16 +5,6 @@ margin: 0;
 padding:0;
 border:0;
 }
-/*
-dark turquoise = #03afc6
-mid turquoise = #28c9de  #02c2d9
-turquoise = #87e1ee
-
-
-green = #45b29a
-dark blue = #2c3d51
-
-*/
 
 html,body, #root, #app, #homepage{
   height:100%;
@@ -24,12 +14,40 @@ body{
   font-family: 'Work Sans', sans-serif;
 }
 
+
 h1 > img {
   width:5%;
   position: relative;
   top:10px;
   margin-right: 10px;
 }
+/*start of header */
+
+#header{
+  background:#45b29a;
+  overflow: auto;
+  text-align: right;
+}
+
+#header > a{
+  display: inline-block;
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  color:#455a64;
+  width:10%;
+  font-size: 1.4vw;
+}
+
+#header > a:hover{
+  color:white;
+}
+
+#header:last-child{
+  padding-right: 10px;
+}
+/*end of header */
+
 
 /*start of about me section */
 #aboutMeContainer{
@@ -45,9 +63,11 @@ h1 > img {
   margin: 30px 0 0 30%;
 }
 
-#introduction > span{
+#iconsAboutMeWrapper2 > span{
   font-weight: bold;
   font-size: 2em;
+  margin-left:13%;
+  line-height: 2;
 }
 
 #pcIcon{
@@ -58,19 +78,20 @@ h1 > img {
 }
 
 #iconsAboutMeWrapper2{
-  overflow: auto;
+overflow: auto;
   clear: left;
+position:relative;
 }
 
 #noteIcon{
 float:left;
-margin:20px 0 40px 25%;
+margin:20px 0 40px 11%;
 width:4vw;
 }
 
 #diskIcon{
   float:right;
-  margin: 30px 40% 40px 0;
+  margin:10px 15px 0 0;
   width:4vw;
 }
 
@@ -83,6 +104,44 @@ width:4vw;
   width:4vw;
   margin:10px 0 0 70%;
   display: block;
+}
+
+#pictureIcon{
+  float:left;
+  width:4.5vw;
+  padding:8% 0 0 10%;;
+
+}
+
+#russIcon{
+  float:left;
+  width:10%;
+bottom: -4px;
+  z-index:2000;
+position: absolute;
+}
+
+#softwareWrapper{
+  float:right;
+  margin-right: 20%;
+  width:20%;
+  text-align: center;
+}
+
+#softwareWrapper > div{
+  display: inline-block;
+  margin:5px;
+  background:#2c3d51;
+  border-radius: 20px;
+  padding:6px;
+  font-size: 1.2vw;
+}
+
+#softwareWrapper > span{
+  font-weight: bold;
+  font-size: 1.6em;
+  margin:10px 0 10px 78%;
+  line-height: 2;
 }
 
 /*end of about me section */
@@ -99,6 +158,11 @@ width:4vw;
 #portfolioContainer > h1{
   margin:0 0 0 30%;
  padding-top:20px;
+}
+
+#portfolioNote{
+  font-size: 1vw;
+  text-align: center;
 }
 
 #portfolioContainer > span{
@@ -131,6 +195,10 @@ margin: 15px 0 10px 30px;
   float:right;
 }
 
+.webProfileWrappers > a:hover{
+  box-shadow: 2px 2px #b7b7b7;
+}
+
 .webProfileWrappers > div{
   margin: 10px 0 0 0;
   padding:10px;
@@ -148,6 +216,10 @@ margin: 15px 0 10px 30px;
 /*end of portfolio section */
 
 /*start of photography section */
+
+#photographyContainer{
+  padding-bottom: 20px;
+}
 
 #photographyContainer > h1{
   margin:0 0 0 18%;
@@ -187,7 +259,122 @@ margin: 15px 0 10px 30px;
   margin:30px 0 30px 0;
   width:30%;
   border-radius:10px;
-  line-height: 50px;
+  padding:10px;
+  color:white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#contactWrapper > img{
+  vertical-align: middle;
+}
+
+#contactWrapper > span{
+  vertical-align: middle;
 }
 
 /*end of contact section */
+
+.footer{
+  background:#45b29a;
+  position:relative;
+  color:#455a64;
+}
+
+.footer > span{
+  font-size: 0.6em;
+  position:absolute;
+  bottom: 0;
+  left:45%;
+  color:#455a64;
+}
+
+.followMe{
+  color:#455a64;
+  font-size: 1vw;
+}
+
+.followMeWrapper{
+  padding:8px;
+}
+
+.followMeWrapper > h3{
+  font-size: 2vw;
+}
+
+
+/* email form start */
+
+#formContainer{
+z-index:100;
+width:80%;
+position: fixed;
+left: 0;
+right: 0;
+background-color: #fafafa;
+padding: 10px;
+max-height: 70%;
+width: 55%;
+margin: auto;
+overflow-y: auto;
+border-radius: 2px;
+will-change: top, opacity;
+box-shadow: 0 16px 28px 0 rgba(0,0,0,0.22), 0 25px 55px 0 rgba(0,0,0,0.21);
+ transition: 2s ease;
+}
+
+#form > input{
+  width:80%;
+  line-height: 1.5;
+}
+
+#form > textarea {
+width:80%;
+line-height: 3;
+}
+
+
+.formButtons{
+float:right;
+margin:10px;
+cursor: pointer;
+background: none;
+font-family: 'Work Sans', sans-serif;
+font-weight: bold;
+color:#455a64;
+}
+
+#formContainer > h2{
+  margin-top: -10px;
+}
+
+#formContainer > h2 > img{
+  width:10%;
+  position: relative;
+  top: 20px;
+}
+
+/* email form end */
+
+/*email confirmation div start */
+
+#emailConfirmation{
+z-index:101;
+width:80%;
+position: fixed;
+left: 0;
+right: 0;
+background-color:#455a64;
+color:white;
+padding: 10px;
+max-height: 70%;
+width: 55%;
+margin: auto;
+overflow-y: auto;
+border-radius: 2px;
+will-change: top, opacity;
+box-shadow: 0 16px 28px 0 rgba(0,0,0,0.22), 0 25px 55px 0 rgba(0,0,0,0.21);
+ transition: 2s ease;
+}
+
+/*email confirmation div end */

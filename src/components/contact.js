@@ -1,13 +1,18 @@
 import React from 'react';
 
-const Contact = () =>{
+const Contact = (props) =>{
+const {emailFormAppearance} = props;
+
+const triggerForm = () => {
+  emailFormAppearance(true);
+}
 
   return(
 
-    <div id="contactContainer">
-<span id="contactWrapper">
-<img src="../../style/img/icons/letter.png" /> contact me
-</span>
+    <div id="contactContainer" onClick={triggerForm}>
+<div id="contactWrapper">
+<img src="../../style/img/icons/letter.png" /><span> contact me</span>
+</div>
     </div>
 
   )
