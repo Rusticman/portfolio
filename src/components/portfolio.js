@@ -37,6 +37,13 @@ const Portfolio = () =>{
                you to create your own questions for users to vote upon.</div>
               <a target="_blank" href="https://vote-rustic-client.herokuapp.com/">visit</a>
             </div>
+            <div className="webProfileWrappers">
+              <img src="../../style/img/web_profiles/stockmarket.png" className="webProfileImg" />
+              <h3>Stock Check</h3>
+              <div>A full stack app which enables the user to check the stock value of a company
+                using their stock symbol.</div>
+              <a target="_blank" href="https://stock-rustic.herokuapp.com/">visit</a>
+            </div>
           <br/>
        <span> {'}'}</span>
     </div>
