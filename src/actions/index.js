@@ -2,7 +2,14 @@ import axios from 'axios';
 
 import {
 FORM_APPEARANCE,
-EMAIL_CONFIRMED_DIV
+EMAIL_CONFIRMED_DIV,
+ABOUT_SIDEBAR,
+PHOTOGRAPHY_SIDEBAR,
+PORTFOLIO_SIDEBAR,
+PORTFOLIO_COLOUR,
+PHOTOGRAPHY_COLOUR,
+ABOUT_COLOUR,
+CONTACT_COLOUR
 } from './types';
 
 const ROOT_URL = 'https://portfolio-server-rustic.herokuapp.com';
@@ -40,4 +47,121 @@ export function sendEmail(email, person, message, emailConfirmationAppear){
       console.error('there was an error',err);
     })
   }
+}
+
+export function activateSidebar(whichMenuItem){
+  if(whichMenuItem === 'about'){
+    return[{
+      type:ABOUT_SIDEBAR,
+      payload:'active'
+    },
+    {
+      type:PORTFOLIO_SIDEBAR,
+      payload:''
+    },
+    {
+      type:PHOTOGRAPHY_SIDEBAR,
+      payload:''
+    }
+  ]
+  }
+  else if(whichMenuItem === 'photography'){
+    return[{
+      type:PHOTOGRAPHY_SIDEBAR,
+      payload:'active'
+    },
+    {
+      type:PORTFOLIO_SIDEBAR,
+      payload:''
+    },
+    {
+      type:ABOUT_SIDEBAR,
+      payload:''
+    }
+  ]
+  }
+  else if(whichMenuItem === 'portfolio'){
+    return[{
+      type:PORTFOLIO_SIDEBAR,
+      payload:'active'
+    },
+    {
+      type:ABOUT_SIDEBAR,
+      payload:''
+    },{
+      type:PHOTOGRAPHY_SIDEBAR,
+      payload:''
+    }
+  ]
+  }
+}
+
+export function activateMenuColour(whichItem){
+
+  if(whichItem === 'about'){
+    return[{
+      type:ABOUT_COLOUR,
+      payload:"itemColour"
+    },
+  {
+    type:PHOTOGRAPHY_COLOUR,
+    payload:""
+  },{
+    type:PORTFOLIO_COLOUR,
+    payload:""
+  },{
+    type:CONTACT_COLOUR,
+    payload:""
+  }]
+  }
+  else if(whichItem === 'photography'){
+    return[{
+      type:PHOTOGRAPHY_COLOUR,
+      payload:"itemColour"
+    },
+  {
+    type:ABOUT_COLOUR,
+    payload:""
+  },{
+    type:PORTFOLIO_COLOUR,
+    payload:""
+  },{
+    type:CONTACT_COLOUR,
+    payload:""
+  }]
+
+  }
+  else if(whichItem === 'portfolio'){
+    return[{
+      type:PORTFOLIO_COLOUR,
+      payload:"itemColour"
+    },
+  {
+    type:ABOUT_COLOUR,
+    payload:""
+  },{
+    type:PHOTOGRAPHY_COLOUR,
+    payload:""
+  },{
+    type:CONTACT_COLOUR,
+    payload:""
+  }]
+  }
+  else if(whichItem === 'contact'){
+    return[{
+      type:CONTACT_COLOUR,
+      payload:"itemColour"
+    },
+  {
+    type:ABOUT_COLOUR,
+    payload:""
+  },{
+    type:PHOTOGRAPHY_COLOUR,
+    payload:""
+  },{
+    type:PORTFOLIO_COLOUR,
+    payload:""
+  }]
+  }
+
 }

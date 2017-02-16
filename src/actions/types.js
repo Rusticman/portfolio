@@ -1,2 +1,9 @@
 export const FORM_APPEARANCE = 'form_appearance';
 export const EMAIL_CONFIRMED_DIV = 'email_confirmed_div';
+export const ABOUT_SIDEBAR = 'about_sidebar';
+export const PORTFOLIO_SIDEBAR = 'portfolio_sidebar';
+export const PHOTOGRAPHY_SIDEBAR = 'photography_sidebar';
+export const PHOTOGRAPHY_COLOUR = 'photography_colour';
+export const PORTFOLIO_COLOUR = 'portfolio_colour';
+export const ABOUT_COLOUR = 'about_colour';
+export const CONTACT_COLOUR = 'contact_colour';

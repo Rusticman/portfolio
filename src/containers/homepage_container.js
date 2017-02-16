@@ -8,6 +8,7 @@ import Contact from '../components/contact';
 import Footer from '../components/footer';
 import EmailForm from '../components/email_form';
 import EmailConfirmation from '../components/email_confirmation';
+import Sidebar from '../components/sidebar';
 
  class Homepage extends Component {
 
@@ -16,6 +17,16 @@ import EmailConfirmation from '../components/email_confirmation';
 
     return (
       <div id="homepage">
+        <Sidebar aboutSidebar={this.props.aboutSidebar}
+                 portfolioSidebar={this.props.portfolioSidebar}
+                 photographySidebar={this.props.photographySidebar}
+                 aboutColour={this.props.aboutColour}
+                 contactColour={this.props.contactColour}
+                 portfolioColour={this.props.portfolioColour}
+                 photographyColour={this.props.photographyColour}
+                 activateSidebar={this.props.activateSidebar}
+                 activateMenuColour={this.props.activateMenuColour}
+               />
         <AboutMe />
         <Portfolio />
         <Photography />
@@ -31,7 +42,14 @@ import EmailConfirmation from '../components/email_confirmation';
 function mapStatToProps(state){
   return{
     formAppearance:state.style.formAppearance,
-    emailConfirmedDiv:state.style.emailConfirmedDiv
+    emailConfirmedDiv:state.style.emailConfirmedDiv,
+    aboutSidebar:state.style.aboutSidebar,
+    portfolioSidebar:state.style.portfolioSidebar,
+    photographySidebar:state.style.photographySidebar,
+    aboutColour:state.style.aboutColour,
+    portfolioColour:state.style.portfolioColour,
+    photographyColour:state.style.photographyColour,
+    contactColour:state.style.contactColour
   }
 }
 
