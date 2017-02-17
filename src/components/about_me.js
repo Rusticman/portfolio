@@ -33,6 +33,8 @@ const AboutMe = () =>{
             <div>React.js</div>
             <div>MongoDB</div>
             <div>Express</div>
+            <div>Angular.js</div>
+            <div>Grunt</div>
             <div>Node.js</div><br/>
             <span>{'}'}</span>
         </div>

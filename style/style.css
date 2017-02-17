@@ -10,10 +10,6 @@ html,body, #root, #app, #homepage{
   height:100%;
 }
 
-#homepage{
-
-}
-
 body{
   font-family: 'Work Sans', sans-serif;
 }
@@ -25,32 +21,6 @@ h1 > img {
   top:10px;
   margin-right: 10px;
 }
-/*start of header */
-
-#header{
-  background:#45b29a;
-  overflow: auto;
-  text-align: right;
-}
-
-#header > a{
-  display: inline-block;
-  margin-right: 15px;
-  text-decoration: none;
-  font-size: 20px;
-  color:#455a64;
-  width:10%;
-  font-size: 1.4vw;
-}
-
-#header > a:hover{
-  color:white;
-}
-
-#header:last-child{
-  padding-right: 10px;
-}
-/*end of header */
 
 /* menu start*/
 
@@ -118,12 +88,12 @@ a.menu-item:hover{
 
 
 /*start of about me section */
+
 #aboutMeContainer{
   background:#45b29a;
   color:white;
   overflow: auto;
   position: relative;
-  height:444px;
 }
 
 
@@ -222,7 +192,6 @@ position: absolute;
   color:#455a64;
   overflow: auto;
   padding-bottom: 20px;
-  height:1692px;
 }
 
 #portfolioContainer > h1{
