@@ -33,7 +33,7 @@ const Portfolio = () =>{
         </div>
         <div className="appInfo col-xs-10 col-sm-12 col-md-3">
           <h3>Book Trading Forum</h3>
-          <div>A full stack app with facebook and twitter log in which allows you to trade books with other
+          <div>A full stack app which allows you to browse and trade books with other
             users.
           </div>
           <a target="_blank" href="http://book-trade-rustic.herokuapp.com/">visit</a>
@@ -45,8 +45,9 @@ const Portfolio = () =>{
         </div>
         <div className="appInfo col-xs-10 col-sm-12 col-md-3">
           <h3>Picture Board</h3>
-          <div>A full stack app with facebook and twitter log in which enables you to add
-          whatever pictures you'd like to the board.
+          <div>A full stack app which enables you to add, view
+            and like pictures on an interactive board.
+
           </div>
           <a target="_blank" href="https://pictureboard-rustic.herokuapp.com/">visit</a>
         </div>
@@ -57,8 +58,8 @@ const Portfolio = () =>{
         </div>
         <div className="appInfo col-xs-10 col-sm-12 col-md-3">
           <h3>Vote</h3>
-          <div>A full stack app with facebook and twitter log in which enables
-           you to create your own questions for users to vote upon.
+          <div>A full stack app which enables
+           you to create polls and vote on your friends' polls.
           </div>
           <a target="_blank" href="https://vote-rustic-client.herokuapp.com/">visit</a>
         </div>
