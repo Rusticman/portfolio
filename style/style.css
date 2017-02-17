@@ -53,7 +53,7 @@ a.menu-item:hover{
 }
 
 .menu-link:nth-child(1):after, .menu-link:nth-child(2):after,
-.menu-link:nth-child(3).active:after {
+.menu-link:nth-child(3):after {
     content: "";
     height: 0;
     width: 2px;
@@ -76,7 +76,7 @@ a.menu-item:hover{
     background-repeat: no-repeat;
     color: inherit;
 }
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 450px) {
   span.title{
   writing-mode: tb-rl;
   }
@@ -156,7 +156,6 @@ a.menu-item:hover{
 }
 
 .portfolioHeader{
-  margin:0 0 0 30%;
  padding-top:20px;
 }
 
@@ -301,35 +300,62 @@ margin: 15px 0 10px 30px;
 
 /*start of contact section */
 
-#contactContainer{
+.contactContainer{
   background:#45b29a;
+}
+
+.contactWrapper{
+  background: #50cfb3;
+  border:1px solid #b7b7b7;
+  border-radius:10px;
+  padding:10px;
+  color:white;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 24px;
+  text-align: center;
+
+}
+
+.contactWrapper > img{
+  vertical-align: middle;
+}
+
+.contactWrapper > span{
+  vertical-align: middle;
+}
+
+.footer{
+  background:#45b29a;
+  color:#455a64;
+}
+
+.followMeWrapper{
+  margin-bottom: -14px;
+}
+
+.codeByRuss{
+  text-align: center;
+  font-size: 10px;
+}
+
+/*
+#contactContainer{
+
   text-align: center;
   height:149px;
 }
 
 #contactWrapper{
-  background: #50cfb3;
-  border:1px solid #b7b7b7;
-  display: inline-block;
-  margin:30px 0 30px 0;
-  width:30%;
-  border-radius:10px;
-  padding:10px;
-  color:white;
-  font-size: 30px;
-  cursor: pointer;
+
 }
 
-#contactWrapper > img{
-  vertical-align: middle;
-}
 
-#contactWrapper > span{
-  vertical-align: middle;
-}
-
+*/
 /*end of contact section */
 
+
+/*
 .footer{
   background:#45b29a;
   position:relative;
@@ -356,7 +382,7 @@ margin: 15px 0 10px 30px;
 .followMeWrapper > h3{
   font-size: 2vw;
 }
-
+*/
 
 /* email form start */
 

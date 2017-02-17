@@ -6,10 +6,10 @@ const AboutMe = () =>{
 
     <div className="aboutMeContainer container-fluid">
       <div className="row">
-        <div className="col-sm-2 col-sm-offset-1">
+        <div className="col-xs-12 col-sm-2 col-sm-offset-1">
           <img src="../../style/img/icons/pc.png" className="pcImg" />
         </div>
-        <div className="introduction col-xs-6 col-sm-2 col-sm-offset-1">
+        <div className="introduction col-xs-8 col-sm-2 col-sm-offset-1">
           <h1>about me{'{'} </h1>
           <br/>
           Hi, my name is Russell.<br/> I have a passion for JavaScript<br/> and taking pretty pictures.<br/>
@@ -31,7 +31,7 @@ const AboutMe = () =>{
         <div className="col-sm-1 col-sm-offset-2">
           <img src="../../style/img/icons/note.png" className="aboutMeImg" />
         </div>
-        <div className="softwareWrapper col-xs-5 col-sm-3 col-sm-offset-2">
+        <div className="softwareWrapper col-xs-8 col-sm-3 col-sm-offset-2">
           <h1>experience with{'{'}</h1><br/>
           <div>JavaScript</div>
           <div>HTML</div>

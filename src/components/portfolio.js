@@ -6,7 +6,7 @@ const Portfolio = () =>{
 
     <div className="portfolioContainer container-fluid">
       <div className="webPageWrapper row">
-        <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-md-offset-3">
+        <div className="col-xs-10 col-sm-6 col-md-6 col-lg-6  col-md-offset-4">
           <h1 className="portfolioHeader">
             <img src="../../style/img/icons/suitcase.png" className="suitcaseImg" />portfolio {'{'}
           </h1>
@@ -16,10 +16,10 @@ const Portfolio = () =>{
        </div>
       </div>
       <div className="webPageWrapper row">
-        <div className="col-xs-12 col-sm-12 col-md-6 col-md-offset-1">
+        <div className="col-xs-10 col-sm-12 col-md-6 col-md-offset-1">
           <img src="../../style/img/web_profiles/nightlife.png" className="webProfileImg" />
         </div>
-        <div className="appInfo col-xs-12 col-sm-12 col-md-3">
+        <div className="appInfo col-xs-10 col-sm-12 col-md-3">
             <h3>Howl At  The Moon</h3>
             <div>A full stack app with facebook and twitter log in which enables you to find
               a bar or restaurant in any location, and confirm your attendance.
@@ -28,10 +28,10 @@ const Portfolio = () =>{
         </div>
       </div>
       <div className="webPageWrapper row">
-        <div className="col-xs-12 col-sm-12 col-md-6 col-md-offset-1">
+        <div className="col-xs-10 col-sm-12 col-md-6 col-md-offset-1">
           <img src="../../style/img/web_profiles/book-trade.png" className="webProfileImg" />
         </div>
-        <div className="appInfo col-xs-12 col-sm-12 col-md-3">
+        <div className="appInfo col-xs-10 col-sm-12 col-md-3">
           <h3>Book Trading Forum</h3>
           <div>A full stack app with facebook and twitter log in which allows you to trade books with other
             users.
@@ -40,10 +40,10 @@ const Portfolio = () =>{
         </div>
       </div>
       <div className="webPageWrapper row">
-        <div className="col-xs-12 col-sm-12 col-md-6 col-md-offset-1">
+        <div className="col-xs-10 col-sm-12 col-md-6 col-md-offset-1">
           <img src="../../style/img/web_profiles/picture-board.png" className="webProfileImg" />
         </div>
-        <div className="appInfo col-xs-12 col-sm-12 col-md-3">
+        <div className="appInfo col-xs-10 col-sm-12 col-md-3">
           <h3>Picture Board</h3>
           <div>A full stack app with facebook and twitter log in which enables you to add
           whatever pictures you'd like to the board.
@@ -52,10 +52,10 @@ const Portfolio = () =>{
         </div>
       </div>
       <div className="webPageWrapper row">
-        <div className="col-xs-12 col-sm-12 col-md-6 col-md-offset-1">
+        <div className="col-xs-10 col-sm-12 col-md-6 col-md-offset-1">
           <img src="../../style/img/web_profiles/vote.png" className="webProfileImg" />
         </div>
-        <div className="appInfo col-xs-12 col-sm-12 col-md-3">
+        <div className="appInfo col-xs-10 col-sm-12 col-md-3">
           <h3>Vote</h3>
           <div>A full stack app with facebook and twitter log in which enables
            you to create your own questions for users to vote upon.
@@ -64,10 +64,10 @@ const Portfolio = () =>{
         </div>
       </div>
       <div className="webPageWrapper row">
-        <div className="col-xs-12 col-sm-12 col-md-6 col-md-offset-1">
+        <div className="col-xs-10 col-sm-12 col-md-6 col-md-offset-1">
           <img src="../../style/img/web_profiles/stockmarket.png" className="webProfileImg" />
         </div>
-        <div className="appInfo col-xs-12 col-sm-12 col-md-3">
+        <div className="appInfo col-xs-10 col-sm-12 col-md-3">
           <h3>Stock Check</h3>
           <div>A full stack app which enables the user to check the stock value of a company
             using their stock symbol.

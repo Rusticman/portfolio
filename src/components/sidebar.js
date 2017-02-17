@@ -7,20 +7,29 @@ const Sidebar = (props) =>{
 
 
 const menuScroll =  (ev) => {
-    if(window.pageYOffset > 0 && window.pageYOffset < 444){
+  const aboutMe = document.querySelector('.aboutMeContainer').clientHeight ||
+                  document.querySelector('.aboutMeContainer').offsetHeight;
+  const portfolio = document.querySelector('.portfolioContainer').clientHeight ||
+                    document.querySelector('.portfolioContainer').offsetHeight;
+  const photography = document.querySelector('.photographyContainer').clientHeight ||
+                      document.querySelector('.photographyContainer').offsetHeight;
+                    
+  const offset = 250;
+
+    if((window.pageYOffset + offset) < aboutMe){
       activateSidebar("about");
       activateMenuColour("about");
     }
-    if(window.pageYOffset > 444 && window.pageYOffset < 1692){
+    else if((window.pageYOffset + offset) < (aboutMe + portfolio) && (aboutMe - offset) < window.pageYOffset){
       activateSidebar("portfolio");
       activateMenuColour("portfolio");
     }
-    if(window.pageYOffset > 1792 && window.pageYOffset < 2200){
+    else if(window.pageYOffset > (portfolio + photography)){
+      activateMenuColour("contact");
+    }
+    else if(window.pageYOffset < (aboutMe + portfolio + photography) && (portfolio + aboutMe - offset) < window.pageYOffset){
       activateSidebar("photography");
       activateMenuColour("photography");
-    }
-    if(window.pageYOffset > 2270){
-      activateMenuColour("contact");
     }
 
 };
@@ -46,7 +55,7 @@ window.onscroll= menuScroll;
         </div>
         <div className={"menu-link " + photographySidebar}>
           <div className="buffer">
-            <a href="#photographyContainer" className="contact menu-item">
+            <a href="#photographyContainer" className="photography menu-item">
               <span className={"title " + photographyColour}>photography</span>
             </a>
           </div>
