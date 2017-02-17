@@ -11,7 +11,7 @@ const Portfolio = () =>{
             <img src="../../style/img/icons/suitcase.png" className="suitcaseImg" />portfolio {'{'}
           </h1>
           <br/>
-          <div id="portfolioNote">*please wait a moment for apps to wake up from sleep when visiting...</div>
+          <div id="portfolioNote">*please wait a moment for apps to wake up from sleeping...</div>
           <br/>
        </div>
       </div>

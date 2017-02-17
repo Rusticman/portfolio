@@ -255,6 +255,21 @@ margin: 15px 0 10px 30px;
 
 /*start of photography section */
 
+.cameraImg{
+  width:40px;
+}
+
+.photographyImgWrapper{
+  padding:0;
+}
+
+.photographyImg{
+  max-width: 100%;
+}
+
+
+
+/*
 #photographyContainer{
   padding-bottom: 20px;
   height:663px;
@@ -281,7 +296,7 @@ margin: 15px 0 10px 30px;
   width:30%;
   float:left;
 }
-
+*/
 /*end of photography section */
 
 /*start of contact section */
