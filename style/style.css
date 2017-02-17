@@ -78,6 +78,11 @@ a.menu-item:hover{
     color: inherit;
 }
 
+span.title{
+
+
+
+}
 
 
 .itemColour{
@@ -89,12 +94,61 @@ a.menu-item:hover{
 
 /*start of about me section */
 
-#aboutMeContainer{
+.aboutMeContainer{
   background:#45b29a;
   color:white;
   overflow: auto;
   position: relative;
 }
+
+.introduction > span{
+  font-size: 36px;
+}
+
+.softwareWrapper > span{
+  font-size: 36px;
+  margin:10px 0 10px 84%;
+  line-height: 2;
+}
+
+.softwareWrapper > h1{
+  margin-top: 0px ;
+}
+
+.aboutMeImg{
+  width:40px;
+}
+
+.pencilImg{
+  margin-top: 50px;
+}
+
+.browserImg{
+  margin-top: 30px;
+}
+
+.pictureImg{
+  margin-top: 140px;
+}
+
+.discImg{
+  margin-top: 70px;
+}
+
+.pcImg{
+  margin-top: 20px;
+}
+
+.softwareWrapper > div{
+  display: inline-block;
+  margin:5px;
+  background:#2c3d51;
+  border-radius: 20px;
+  padding:6px;
+}
+
+/*
+
 
 
 #introduction{
@@ -167,22 +221,8 @@ position: absolute;
   text-align: center;
 }
 
-#softwareWrapper > div{
-  display: inline-block;
-  margin:5px;
-  background:#2c3d51;
-  border-radius: 20px;
-  padding:6px;
-  font-size: 1.2vw;
-}
 
-#softwareWrapper > span{
-  font-weight: bold;
-  font-size: 1.6em;
-  margin:10px 0 10px 78%;
-  line-height: 2;
-}
-
+*/
 /*end of about me section */
 
 /*start of portfolio section */
