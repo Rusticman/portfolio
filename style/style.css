@@ -184,72 +184,6 @@ a.menu-item:hover{
   box-shadow: 2px 2px #b7b7b7;
 }
 
-/*
-#portfolioContainer{
-  background:#ecf0f1;
-  color:#455a64;
-  overflow: auto;
-  padding-bottom: 20px;
-}
-
-#portfolioContainer > h1{
-  margin:0 0 0 30%;
- padding-top:20px;
-}
-
-#portfolioNote{
-  font-size: 1vw;
-  text-align: center;
-}
-
-#portfolioContainer > span{
-  font-weight: bold;
-  font-size: 2em;
-  margin-left:40%;
-  display: block;
-  clear:left;
-  padding-top: 10px;
-}
-
-.webProfileWrappers{
-  overflow: auto;
-  float:left;
-  width:60%;
-  margin-left:25%;
-}
-
-.webProfileWrappers > h3{
-float:left;
-margin: 15px 0 10px 30px;
-}
-
-.webProfileWrappers > a{
-  background:#45b29a;
-  padding:5px;
-  text-decoration: none;
-  margin:10px 10% 10px 10px;
-  color:white;
-  float:right;
-}
-
-.webProfileWrappers > a:hover{
-  box-shadow: 2px 2px #b7b7b7;
-}
-
-.webProfileWrappers > div{
-  margin: 10px 0 0 0;
-  padding:10px;
-  float:right;
-  width:20%;
-  font-size: 1vw;
-}
-
-.webProfileImg{
-  float:left;
-  margin:10px 0 0 0;
-  width:70%;
-}
-*/
 /*end of portfolio section */
 
 /*start of photography section */
@@ -267,35 +201,6 @@ margin: 15px 0 10px 30px;
 }
 
 
-
-/*
-#photographyContainer{
-  padding-bottom: 20px;
-  height:663px;
-}
-
-#photographyContainer > h1{
-  margin:0 0 0 18%;
- padding-top:20px;
-}
-#photographyContainer > span{
-  font-weight: bold;
-  font-size: 2em;
-  margin-left: 40%;
-}
-
-#photographyWrapper{
-  overflow: auto;
-  padding-left: 8%;
-
-}
-
-
-.photographyImg{
-  width:30%;
-  float:left;
-}
-*/
 /*end of photography section */
 
 /*start of contact section */
@@ -338,51 +243,6 @@ margin: 15px 0 10px 30px;
   text-align: center;
   font-size: 10px;
 }
-
-/*
-#contactContainer{
-
-  text-align: center;
-  height:149px;
-}
-
-#contactWrapper{
-
-}
-
-
-*/
-/*end of contact section */
-
-
-/*
-.footer{
-  background:#45b29a;
-  position:relative;
-  color:#455a64;
-}
-
-.footer > span{
-  font-size: 0.6em;
-  position:absolute;
-  bottom: 0;
-  left:45%;
-  color:#455a64;
-}
-
-.followMe{
-  color:#455a64;
-  font-size: 1vw;
-}
-
-.followMeWrapper{
-  padding:8px;
-}
-
-.followMeWrapper > h3{
-  font-size: 2vw;
-}
-*/
 
 /* email form start */
 

@@ -13,7 +13,7 @@ const menuScroll =  (ev) => {
                     document.querySelector('.portfolioContainer').offsetHeight;
   const photography = document.querySelector('.photographyContainer').clientHeight ||
                       document.querySelector('.photographyContainer').offsetHeight;
-                    
+
   const offset = 250;
 
     if((window.pageYOffset + offset) < aboutMe){
@@ -41,28 +41,28 @@ window.onscroll= menuScroll;
       <nav className="menu">
         <div className={"menu-link " + aboutSidebar}>
           <div className="buffer">
-            <a href="#aboutMeContainer" className="about menu-item" >
+            <a href="#aboutMeHref" className="about menu-item" >
               <span className={"title " + aboutColour}>about</span>
             </a>
           </div>
         </div>
         <div className={"menu-link " + portfolioSidebar}>
           <div className="buffer">
-            <a href="#portfolioContainer" className="portfolio menu-item">
+            <a href="#portfolioHref" className="portfolio menu-item">
               <span className={"title " + portfolioColour}>portfolio</span>
             </a>
           </div>
         </div>
         <div className={"menu-link " + photographySidebar}>
           <div className="buffer">
-            <a href="#photographyContainer" className="photography menu-item">
+            <a href="#photographyHref" className="photography menu-item">
               <span className={"title " + photographyColour}>photography</span>
             </a>
           </div>
         </div>
         <div className="menu-link">
           <div className="buffer">
-            <a href="#contactContainer" className="contact menu-item">
+            <a href="#contactHref" className="contact menu-item">
               <span className={"title " + contactColour}>contact me</span>
             </a>
           </div>

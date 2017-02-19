@@ -4,7 +4,7 @@ const Portfolio = () =>{
 
   return(
 
-    <div className="portfolioContainer container-fluid">
+    <div id="portfolioHref" className="portfolioContainer container-fluid">
       <div className="webPageWrapper row">
         <div className="col-xs-10 col-sm-6 col-md-6 col-lg-6  col-md-offset-4">
           <h1 className="portfolioHeader">

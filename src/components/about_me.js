@@ -4,17 +4,21 @@ const AboutMe = () =>{
 
   return(
 
-    <div className="aboutMeContainer container-fluid">
+    <div id="aboutMeHref" className="aboutMeContainer container-fluid">
       <div className="row">
         <div className="col-xs-12 col-sm-2 col-sm-offset-1">
           <img src="../../style/img/icons/pc.png" className="pcImg" />
         </div>
-        <div className="introduction col-xs-8 col-sm-2 col-sm-offset-1">
+        <div className="introduction col-xs-8 col-sm-3 col-sm-offset-1">
           <h1>about me{'{'} </h1>
           <br/>
-          Hi, my name is Russell.<br/> I have a passion for JavaScript<br/> and taking pretty pictures.<br/>
-          I like to build apps using<br/> the MERN stack.<br/>
-          <span>{'}'}</span>
+          Hi, my name is Russell.  I have a <br/>
+          passion for JavaScript and taking pretty<br/>
+          pictures.  I'm completely self taught, and<br/>
+          I like to build apps using the MERN stack.<br/>
+          In my spare time,  I like to contribute to<br/>
+          open source projects on <a href="https://github.com/Rusticman" target="_blank" className="followMe">github.</a><br/>
+          <span style={{"padding-left":"50%"}}>{'}'}</span>
         </div>
         <div className="col-sm-1">
           <img src="../../style/img/icons/pencil.png" className="pencilImg aboutMeImg" />

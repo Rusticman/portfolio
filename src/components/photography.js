@@ -4,7 +4,7 @@ const Photography = () =>{
 
   return(
 
-    <div className="photographyContainer container-fluid">
+    <div id="photographyHref" className="photographyContainer container-fluid">
       <div className="row">
         <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-md-offset-3">
         <h1><img src="../../style/img/icons/camera.png" className="cameraImg"/>  photography {'{'} </h1>
